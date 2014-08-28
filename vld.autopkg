@@ -2,7 +2,7 @@ nuget {
 	nuspec {
 		id = vld;
 		title: "Visual Leak Detector for Visual C++ 2008/2010/2012/2013";
-		version: 2.4.2.1;
+		version: 2.4.2.2;
 		authors: {coapp, Arkadiy Shapkin, Dan Moulding, Tightrope Media Systems};
 		owners: {Arkadiy Shapkin, Dan Moulding};
 		licenseUrl: "http://vld.codeplex.com/license";
@@ -24,8 +24,8 @@ nuget {
 		};
 
 		[win32, v100] {
-        	lib: "lib\Win64\*.lib";
-        	bin: "bin\Win64\*.dll";
+        	lib: "lib\Win32\*.lib";
+        	bin: "bin\Win32\*.dll";
 		};
     }
 }
