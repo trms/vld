@@ -1,0 +1,31 @@
+nuget {
+	nuspec {
+		id = vld;
+		title: "Visual Leak Detector for Visual C++ 2008/2010/2012/2013";
+		version: 2.4.2.1;
+		authors: {coapp, Arkadiy Shapkin, Dan Moulding, Tightrope Media Systems};
+		owners: {Arkadiy Shapkin, Dan Moulding};
+		licenseUrl: "http://vld.codeplex.com/license";
+		projectUrl: "https://vld.codeplex.com/";
+		releaseNotes: {@"rc2"}; 
+		requireLicenseAcceptance:false;
+		summary: "Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.";
+		copyright: "Copyright (C) 1991, 1999 Free Software Foundation, Inc. 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA";
+		tags: {native, vld, trms, mediacircus, leak};
+		description: {@"Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.";}
+	};
+
+	files {
+		include : "include\*.h";
+		
+		[x64, v100] {
+        	lib: "lib\Win64\*.lib";
+        	bin: "bin\Win64\*.dll";
+		};
+
+		[win32, v100] {
+        	lib: "lib\Win64\*.lib";
+        	bin: "bin\Win64\*.dll";
+		};
+    }
+}
